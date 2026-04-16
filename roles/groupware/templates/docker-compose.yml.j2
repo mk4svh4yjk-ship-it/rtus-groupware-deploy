@@ -1,0 +1,14 @@
+services:
+  web:
+    image: "{{ groupware_image }}:{{ groupware_tag }}"
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:{{ groupware_http_port }}:80"
+    environment:
+      APP_URL: "https://{{ groupware_server_name }}"
+      DB_HOST: "{{ groupware_db_host }}"
+      DB_NAME: groupware
+    volumes:
+      - uploads:/var/www/html/upload
+volumes:
+  uploads:

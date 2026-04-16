@@ -1,0 +1,4 @@
+- name: restart groupware
+  community.docker.docker_compose_v2:
+    project_src: "{{ groupware_dir }}"
+    state: restarted

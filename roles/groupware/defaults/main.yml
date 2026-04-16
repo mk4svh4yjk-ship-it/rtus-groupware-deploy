@@ -1,0 +1,5 @@
+groupware_dir: /opt/groupware
+groupware_image: registry.us.raccoontechcorp.com/groupware/web
+groupware_tag: "2.4.1"
+groupware_http_port: 8080
+groupware_server_name: groupware.us.raccoontechcorp.com
