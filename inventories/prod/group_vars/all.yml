@@ -1,0 +1,6 @@
+groupware_db_host: db.us.raccoontechcorp.com
+nginx_vhosts:
+  - listen: "443 ssl"
+    server_name: groupware.us.raccoontechcorp.com
+    extra_parameters: |
+      location / { proxy_pass http://127.0.0.1:8080; }
