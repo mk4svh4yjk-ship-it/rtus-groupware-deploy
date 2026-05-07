@@ -1,0 +1,5 @@
+groupware_server_name: staging-groupware.us.raccoontechcorp.com
+groupware_http_port: "{{ vault_groupware_port }}"
+groupware_db_host: 127.0.0.1
+groupware_test_user: "{{ vault_groupware_test_user }}"
+groupware_test_password: "{{ vault_groupware_test_password }}"
